@@ -1,0 +1,11 @@
+:root{
+    --mainColor: linear-gradient(to left, #ff4545 0%, #682b30 100%);;
+    --darkerColor: #682b30;
+    --btnTextColor: #fff
+}
+
+.site_logo {
+  width: 120px;
+}
+
+

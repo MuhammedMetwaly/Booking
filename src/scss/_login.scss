@@ -1,0 +1,159 @@
+.page_wrapper {
+  background-position: left top;
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-attachment: fixed;
+
+  @media(max-width: 768px) {
+    background-size: 0% 0%;
+  }
+}
+
+
+.site_logo {
+  width: 120px;
+
+  @media(max-width: 768px) {
+    width: 120px;
+  }
+  &.logo-lg{
+    width: 150px;
+  }
+}
+
+.parent_block {
+  border: 1px solid #ddd;
+
+  .nav-tabs {
+    border: 0 none;
+    padding: 0;
+
+    li {
+      flex: 1 1;
+    }
+
+    .nav-link {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.25rem;
+      font-family: 'dinMed';
+      background-color: #f3f3f3;
+      color: #333;
+
+      &.active {
+        border-top: 2px solid $primary;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.custom_link {
+  position: relative;
+  display: inline-block;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    background-color: $primary;
+    height: 2px;
+    bottom: -.5rem;
+    transition: $trans;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.blocked_el {
+  background: #fff;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .15);
+  border-radius: 1rem;
+  padding: 1.25rem;
+
+  img {
+    width: 4.5rem;
+  }
+}
+
+.countdown {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.countdown>div {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 1rem;
+}
+
+.countdown span {
+  text-align: center;
+}
+
+.countdown>div span:last-of-type {
+  border: 1px solid $primary;
+  display: inline-block;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  line-height: 2.8rem;
+  border-radius: 50%;
+  color: $primary;
+  margin-bottom: .25rem;
+  text-align: center;
+}
+
+.times_table {
+  [class*=col-] {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.blocked_el {
+  .verfied_img {
+    width: 200px;
+  }
+}
+
+.fixed_whats {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  line-height: 2.7rem;
+  font-size: 2rem;
+  background: rgb(29, 167, 47);
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  transition: $trans;
+  box-shadow: 0 0 1rem rgba(29, 167, 47, .8);
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+}
+.underline_link{
+  font-size: 1.25rem;
+  color: inherit;
+  padding-bottom: .25rem;
+  border-bottom: 2px solid $primary;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}

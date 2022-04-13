@@ -1,0 +1,15 @@
+:root{
+    --mainColor: #c7a418;
+    --darkerColor: #806b0e; 
+    --btnTextColor: #fff
+}
+
+.site_logo {
+    width: 120px;
+  }
+@media (max-width: 768px) {
+  .site_logo {
+    width: 120px;
+  }
+}
+  

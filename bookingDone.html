@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title> ليدي باور - الصفحة الرئيسية</title>
+  <link rel="stylesheet"
+        href="./src/css/all.min.css">
+  <link rel="shortcut icon"
+        href="./src/imgs/favicon.ico"
+        type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
+        rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="./src/css/main.css">
+</head>
+
+<body>
+  <a target="_blank"
+     href="https://wa.me/05555555555?text=مرحبا بكم"
+     class="fixed_whats"
+     data-toggle="tooltip"
+     title="تواصل معنا واتساب"
+     data-placement="top">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <div class="mh-100 bg-light">
+    <div class="container-lg container-fluid">
+      <div class="row mb-md-4 mb-3 align-items-center">
+        <div class="col-6 mx-auto text-center">
+          <img class="site_logo"
+               src="./src/imgs/logo.svg"
+               alt="شعار الموقع">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="blocked_el mb-4 py-5">
+            <div class="row align-items-center text-md-right text-center">
+              <div class="col-md-6">
+                <img src="./src/imgs/undraw_verified_tw20.svg"
+                     class="mb-4 verfied_img"
+                     alt="illustration">
+              </div>
+              <div class="col-md-6">
+                <h3 class="h5 medium_font mb-4">تم الحجز بنجاح ومتبقى</h3>
+                <div class='countdown justify-content-md-start justify-content-center'
+                     data-date="2020-06-23"
+                     data-time="12:00"></div>
+              </div>
+            </div>
+            <a href="./index.user.html"
+               class="main_btn border-0 w-100 scrollTo">
+              <i class="fa fa-home ml-2"></i> العودة لصفحتى</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+          integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+          crossorigin="anonymous">
+          </script>
+  <script src="./src/js/countdown.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle=tooltip]').tooltip()
+    });
+  </script>
+</body>
+
+</html>
