@@ -3,42 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> ليدي باور - الصفحة الرئيسية</title>
-  <link rel="stylesheet"
-        href="./src/css/all.min.css" />
-  <link rel="shortcut icon"
-        href="./src/imgs/favicon.ico"
-        type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous" />
-  <link rel="stylesheet"
-        href="./src/css/ladyPower/custom.css" />
-  <link rel="stylesheet"
-        href="./src/css/main.css" />
+  <link rel="stylesheet" href="./src/css/all.min.css" />
+  <link rel="shortcut icon" href="./src/imgs/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <link rel="stylesheet" href="./src/css/main.css" />
+  <link rel="stylesheet" href="./src/css/Berry/custom.css" />
 </head>
 
 <body>
-  <a target="_blank"
-     href="https://wa.me/05555555555?text=مرحبا بكم"
-     class="fixed_whats"
-     data-toggle="tooltip"
-     title="تواصل معنا واتساب"
-     data-placement="top">
+  <a target="_blank" href="https://wa.me/05555555555?text=مرحبا بكم" class="fixed_whats" data-toggle="tooltip" title="تواصل معنا واتساب" data-placement="top">
     <i class="fab fa-whatsapp"></i>
   </a>
   <div class="h-100 bg-light">
     <div class="container-lg container-fluid">
       <div class="row mb-md-4 mb-3 align-items-center">
         <div class="col-md-6 text-md-right text-center">
-          <img class="site_logo"
-               src="./src/imgs/logo.svg"
-               alt="شعار الموقع" />
+          <img class="site_logo" src="./src/imgs/Delta/logo.png" alt="شعار الموقع" />
         </div>
         <div class="col-md-6 text-md-left text-center">
           <div class="d-flex align-items-center">
@@ -53,60 +37,40 @@
       <div class="row">
         <div class="col-md-6 mb-md-0 mb-4 order-md-1 order-2">
           <h1 class="bold_font h4 mb-4">حجز ميعاد جديد</h1>
-          <div class="blocked_el"
-               id="form_book">
-            <form action=""
-                  method="">
+          <div class="blocked_el" id="form_book">
+            <form action="" method="">
               <label class="grey d-block">وقت الحجز</label>
               <div class="input_group mb-3">
-                <label for="time_1"
-                       class="checkbox_block">
+                <label for="time_1" class="checkbox_block">
                   <span>
-                    <input type="radio"
-                           name="time"
-                           id="time_1"
-                           required />
+                    <input type="radio" name="time" id="time_1" required />
                     <span class="radio_circle ml-2"></span> من 11 ص - 1 م </span>
                   <span class="mr-auto grey">متبقى ( <span class="medium_font primary">23</span> )</span>
                 </label>
               </div>
               <div class="input_group mb-3">
-                <label for="time_2"
-                       class="checkbox_block">
+                <label for="time_2" class="checkbox_block">
                   <span>
-                    <input type="radio"
-                           name="time"
-                           id="time_2"
-                           required />
+                    <input type="radio" name="time" id="time_2" required />
                     <span class="radio_circle ml-2"></span> من 1 م - 3 م </span>
                   <span class="mr-auto grey">متبقى ( <span class="medium_font primary">23</span> )</span>
                 </label>
               </div>
               <div class="input_group mb-3">
-                <label for="time_3"
-                       class="checkbox_block">
+                <label for="time_3" class="checkbox_block">
                   <span>
-                    <input type="radio"
-                           name="time"
-                           id="time_3"
-                           required />
+                    <input type="radio" name="time" id="time_3" required />
                     <span class="radio_circle ml-2"></span> من 3 م - 5 م </span>
                   <span class="mr-auto grey">متبقى ( <span class="medium_font primary">23</span> )</span>
                 </label>
               </div>
-              <div class="alert alert-warning"
-                   role="alert">
-                <label for="agree"
-                       class="custom_checkbox">
-                  <input type="checkbox"
-                         name=""
-                         id="agree" />
+              <div class="alert alert-warning" role="alert">
+                <label for="agree" class="custom_checkbox">
+                  <input type="checkbox" name="" id="agree" />
                   <span class="ml-2"></span> اتعهد انا المذكورة بيانتها اعلاه بأن التزم بتطبيق كافة الإجراءات الاحترازية للحد من انتشار فايروس كورونا والإلتزام بالحضور والمغادرة فى الوقت المحدد وفى حالة عدم الحضور يحتسب من رصيدى </label>
               </div>
               <div>
-                <a href="./index.user.html"
-                   type="submit"
-                   class="main_btn ml-2 w-100">تسجيل حجز جديد</a>
+                <a href="./index.user.html" type="submit" class="main_btn ml-2 w-100">تسجيل حجز جديد</a>
               </div>
             </form>
           </div>
@@ -121,15 +85,17 @@
           <div class="blocked_el mb-4">
             <div class="row">
               <div class="col-8">
-                <div class="countdown"
-                     data-date="2021-10-28"
-                     data-time="19:00"></div>
+                <div class="countdown" data-date="2022-06-13" data-time="19:00"></div>
               </div>
               <div class="col-4 text-left">
-                <img src="./src/imgs/clock.svg"
-                     alt="clockIcon" />
+                <img src="./src/imgs/clock.svg" alt="clockIcon" />
               </div>
             </div>
+            <form class="form_confirm" action="" method="">
+              <button 
+              type="button"
+              class="main_btn danger ml-2 mt-3 pt-0 px-4 small_btn" data-title="الغاء الحجز" data-content="ستقوم بالغاء الحجز">الغاء الحجز</button>
+            </form>
           </div>
           <h3 class="medium_font h5 mb-3">اوقات حجز الكلاس 22 يونيو 2020</h3>
           <div class="blocked_el p-0 mb-md-0 mb-4">
@@ -189,12 +155,9 @@
     </div>
   </div>
   <!--scripts-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
-          integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
-          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
   <script src="./src/js/countdown.js"></script>
   <script src="./src/js/main.js"></script>
 </body>

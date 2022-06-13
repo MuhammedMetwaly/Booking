@@ -36,10 +36,34 @@ $(document).ready(function () {
     const id = $(this).data("id");
     const statement = $(this).data("statement");
     window.scrollTo({ top: 0, behavior: "smooth" });
-    $("#freeze-form").removeClass("d-none");
+    
+    $('#freezeModal').modal('show')
     $("#freeze-form [name=period]").val("").focus();
     $("#freeze-form #action-statement").html(statement);
     $("#freeze-form input[type=hidden]").val(id);
     $("#freeze-form form").attr("action", action);
   });
+
+  // confirm function
+  $('.form_confirm button').click(function(e){
+    const form = $(this).parent("form");
+    const title = $(this).data("title");
+    const content = $(this).data("content");
+    $.confirm({
+      title,
+      content,
+      buttons: {
+        confirm: {
+          btnClass: `main_btn danger ml-2 px-4 h-auto`,
+          text: 'تأكيد',
+          action: function () {
+            form.submit();
+          },
+        },
+      cancel:{
+        text: "اغلاق",
+      }
+      }
+  });
+  })
 });

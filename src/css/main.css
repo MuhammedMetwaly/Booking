@@ -458,7 +458,12 @@ input[type=number] {
 .main_btn.secondary:hover {
   background-color: #fff0b3;
 }
-
+.main_btn.danger{
+  background-color: #dc3545;
+}
+.main_btn.danger:hover{
+  background-color: #bd2b39;
+}
 .transparent_btn {
   border: 1px solid var(--mainColor);
   color: var(--mainColor);
@@ -480,6 +485,7 @@ input[type=number] {
 
 .small_btn {
   padding: .25rem .5rem;
+  font-size: 1rem;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -714,5 +720,42 @@ input[type=number]::-webkit-outer-spin-button {
   .page-item.active .page-link{
     background: var(--mainColor);
     border-color: var(--mainColor);
-  } 
+  }
+  .table td, .table th{
+    white-space: nowrap;
+  }
+  .rate_radiobox{
+    background-color: #f3f3f3;
+    border: 1px solid #e3e3e3;
+    border-radius: .25rem;
+    padding: .25rem .5rem;  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rate_radiobox img{
+  opacity: .6;
+  filter: grayscale(100%);
+  transform: scale(.8);
+  transition: .2s ease-in-out;
+  margin-left: .5rem;
+}
+@media(max-width: 768px){
+  .rate_radiobox h3{
+    display: none;
+  }
+  .rate_radiobox img{
+    margin-left: 0;
+  }
+}
+.rate_radiobox input:checked ~ img{
+  transform: scale(1);
+  opacity: 1;
+  filter: grayscale(0);
+}
+.rate_radiobox input:checked
 /*# sourceMappingURL=main.css.map */
