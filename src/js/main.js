@@ -66,4 +66,24 @@ $(document).ready(function () {
       }
   });
   })
+  
+  $('.rateYo').each( function (index) { 
+    const stars =  $(this).data('rate') ?? 0
+    const self = this
+    $(self).rateYo({
+      starWidth: "40px",
+      rtl: true,
+      rating: stars,
+      normalFill: '#ddd',
+      ratedFill: "#f9d212",
+      spacing: ".5rem"
+    });
+      $(self).rateYo()
+              .on("rateyo.change", function (e, data) {
+ 
+                var rating = data.rating;
+                $(self).next('input').val(rating);
+              });
+  });
+
 });
